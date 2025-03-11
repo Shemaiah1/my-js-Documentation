@@ -102,3 +102,92 @@ the comarison operators are used to compare two or more numbers they include
 === triple equal to comparison operator: this checks out for the value and type
 != not equal to comparison operator
 ```
+
+## 11. Logical Operators
+The logical operators are used to check if multiple option are true or false,then execute a portion of the code we have the AND (&&) and OR (||) are logical operators . Example
+```
+var logic= 30;
+  if (logic >=18 &&  logic <=30)//The And logical opertor(&&) is enabling two option
+   {
+   console.log("accepted")
+  }
+  if(logic <=5 || logic <18 )// The Or logical operator(||) is enabling two options
+   {
+   console.log("Hold on for now we will get to you")
+  }
+```
+## 12. While Loops
+ The while loops is another control flow system just like the if statement. it uses the keyword While with a parenthesis where the conditions will be written and calliberaces where the code to be executed will be written, so if the conditon is true the code will be executed. A loop is ment to repeat part of a code so while the condition is true it will always keep executing that portion of code, so at some point the condition has to be false to stop the code execution.
+ ```
+while (logic > 30)//The code is executed as long as this condition remains the same
+   {
+   console.log("you are not accepted")
+  }
+ ```
+ ## 13. For loop
+  The for loop works similar to the while loop but is more specific in that all the component ( the variable, the component and the break) within the brackets.
+  ```
+  /For loop
+  for(floop = 0; floop < 10; floop++)
+  {
+   console.log( "for loop")
+   }
+  ```
+
+  ## 14. Break and continue
+  the break keyword break you out of the loop at any point while the continue keyword while the continue keyword stops the execution of the code at any point but goes out to continue the rest part of the code.
+  ```
+  while (logic > 30)//The code is executed as long as this condition remains the same
+   {
+   console.log("you are not accepted");
+   logic++
+      if(logic === 50)
+         { break;}//the break keyword
+  }
+  
+  //For loop
+  for(floop = 0; floop < 10; floop++){
+   console.log( "for loop")
+
+   if(floop === 20)
+      { continue;}//the break keyword
+  }
+  ```
+  ## 15. Functions
+   Function groups logical section of code together so they can be called at any time and anywhere. We specify by writting the keyword Function then the name of the function(the naming rules are similar to the varible naming rules) then write the parenthesis ,the parenthesis can be empty but if we put variable or value we have to specify it.
+
+## 16. variable scope
+variable scope determines where the code and the variable isvisible and which part of the code can use it.
+
+### Types of scope
+1.Global variable: global variable has a global scope, it can be used anywhere in the code.
+2.Local variable:  local variable are variable defined inside a function, and so it can only be used within the function.
+# JavaScript Basics - README
+
+This documentation covers basic JavaScript concepts: **Numbers, Strings, Slice, and Split**.
+
+## 17. Numbers in JavaScript
+JavaScript handles all numbers as the **Number** type, whether integers or decimals.
+
+### Example:
+```
+let num = 10;
+let decimal = 5.5;
+console.log(typeof num); // "number"
+console.log(typeof decimal); // "number"
+```
+---
+
+## 18. Strings in JavaScript
+A **string** is a sequence of characters, enclosed in quotes (`'`, `"`, or `` ` ``).
+
+### Example:
+```
+let text = "Hello, World!";
+console.log(text.length); // 13 (length of the string)
+console.log(text.toUpperCase()); // "HELLO, WORLD!"
+console.log(text.includes("Hello")); // true (checks if "Hello" exists)
+```
+
+
+
