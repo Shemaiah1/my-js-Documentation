@@ -80,18 +80,19 @@ console.log(a);
  }// this is giving it a two way option at the same time if x is greater than or if it is equal to 3 the portion of code available will come to play 
  
  //Logical Operator
-  var logic = 40;
-  if (logic >=18 &&  logic <=30)//The And logical opertor(&&) is enabling two option
-   {
+var logic = 40;
+
+if (logic >=18 && logic <=30) { //The And logical opertor(&&) is enabling two option
    console.log("accepted")
-  }
-  if(logic <=5 || logic <18 )// The Or logical operator(||) is enabling two options
-   {
+} else if (logic <=5 || logic <18 ) { // The Or logical operator(||) is enabling two options
    console.log("Hold on for now we will get to you")
-  }
+} else if (logic !== 40){
+   console.log()
+}
+
  // While loops
 
-/*while (logic > 30)//The code is executed as long as this condition remains the same
+while (logic > 30)//The code is executed as long as this condition remains the same
    {
    console.log("you are not accepted");
    logic++
@@ -100,28 +101,44 @@ console.log(a);
   }
   
   //For loop
-  for(floop = 0; floop < 10; floop++){
-   console.log( "for loop")
-
-   if(floop === 20)
-     { continue;}//the break keyword
-  }*/
+for (i = 0; i < 10; i++) {
+   console.log("for loop")
+}
  
  //function
- function getAverage (a,b,c){//
-   var average =(a+b+c)/2;// local variable
-    console.log(average);
- }
- getAverage(10,20,30)//this is just as writing the alert function and giving it a value
+function getAverage (a, b, c) {
+   var average = (a + b + c)/3; // local variable
+   console.log(average);
+}
+getAverage(10, 20, 30) //this is just as writing the alert function and giving it a value
 
  //Numbers
- let num = 10;
-let decimal = 5.5;{
+let num = 10;
+let decimal = 5.5;
 console.log(typeof num); // "number"
-console.log(typeof decimal);} // "number"
+console.log(typeof decimal); // "number"
 
-//
-let text = "Hello, World!";{
+//string
+let text = "Hello, World!";
 console.log(text.length); // 13 (length of the string)
 console.log(text.toUpperCase()); // "HELLO, WORLD!"
-console.log(text.includes("Hello"));} // true (checks if "Hello" exists)
+console.log(text.includes("Hello")); // true (checks if "Hello" exists)
+
+//spliting and slicing strings
+
+//spliting
+var split="1, 2, 3, 4, 5";
+console.log(split.split(",")); //this will split each number into different strings at each point of the comma
+
+//slicing
+var str="welcome to the world of programming";//main text
+console.log(str.slice(15));//this will slice out the rest and start from the 15th character
+
+//Array
+var array= [ 1,2,3,4,5 ];//values in the array
+console.log(array);// loging all to the console
+console.log(array[2]); //loging array at position 2 to the console
+console.log(array.length,"values in this array");//tells the number of values in the array
+console.log(array.reverse());
+
+// Object 

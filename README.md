@@ -179,7 +179,10 @@ console.log(typeof decimal); // "number"
 ---
 
 ## 18. Strings in JavaScript
-A **string** is a sequence of characters, enclosed in quotes (`'`, `"`, or `` ` ``).
+A **string** is a sequence of characters, enclosed in quotes (`'`, `"`, or `` ` ``). if you try to put a string betweeen or inside a string it will not work  so we can combat this by using the single quotation mark to surround the whole string, we can also escape a character by using a back slash(/) before the string. strings has properties and method.
+e.g
+1. properties: length
+2. method: touppercase, tolowercase. indexof
 
 ### Example:
 ```
@@ -188,6 +191,14 @@ console.log(text.length); // 13 (length of the string)
 console.log(text.toUpperCase()); // "HELLO, WORLD!"
 console.log(text.includes("Hello")); // true (checks if "Hello" exists)
 ```
+by cutting
+## 19. spliting and slicing strings
+we slice strings by cutting and removing part of the string with the function of slice put in the position of the start part of the  string we want to slice and it will slice, also if there is a string with different words which we want to be define in seperate strings we use the split function.
 
+## 20. Arrays
+An array is a single variable that can hold multiple value or other variables. when creating arrays we use the square brackets []. values can also be updated, arrays also have properties like length and methods like sort,reverse etc.
 
+## 21. Object
+ Javascript uses object which are also used in other programming languages, but in javascript we use a simplified version of it e.g strings, numbers, arrays and more. so object is a container which encloses data and behaviour together where they belong. We can call  properties and methods on the object
 
+## 22. Creating a new javascript object
