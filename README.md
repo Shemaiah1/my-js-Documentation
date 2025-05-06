@@ -199,6 +199,44 @@ we slice strings by cutting and removing part of the string with the function of
 An array is a single variable that can hold multiple value or other variables. when creating arrays we use the square brackets []. values can also be updated, arrays also have properties like length and methods like sort,reverse etc.
 
 ## 21. Object
- Javascript uses object which are also used in other programming languages, but in javascript we use a simplified version of it e.g strings, numbers, arrays and more. so object is a container which encloses data and behaviour together where they belong. We can call  properties and methods on the object
+ Javascript uses object which are also used in other programming languages, but in javascript we use a simplified version of it e.g strings, numbers, arrays and more. so object is a container which encloses data and behaviour together where they belong. We can call  properties, functions and methods on the object.
 
 ## 22. Creating a new javascript object
+an object can be created just like an array is created. to put properties in it we use a similar notation to arrays but instead of the square bbracket we use a dot notation and instead of the numbers we have names for the properties. objects can be given properties and method,like array we can also use shorthand notation which uses curly braces and encloses the properties and methods inside.
+
+## 23. THIS keyword
+it refers to what ever object currently owns that space you used the THIS keyword this. The window owns the THIS keyword exerpt it is owned by a particular object (being inside the curly braces of that particular object).
+
+## 24. constructor functions
+if we want to create variations of an object one can choose to copy and paste the object several times changing the properties and the method but if a multiple number of object are needed it will waste time, space and energy. that is where the constructor function comes in. so a constructor function is just a function that creates objects for us, when we create a new object array or string it is the constructor function that creates it for us, first we make a variable to store the constructor function in,sett it equal to a function then within the parentheses we set variables to set the properties,then we can use the THIS keyword to represent the object we are making.
+
+## 25. the date object
+the date object is an inbuilt javascript object, it can be used to create dynamic dates, or store previous or future dates. We create a date by simply writting new date and the current date will be stored in the variable.we can call methods on the date object some methods include:
+
+## 26. The DOM
+it stands for document object model(DOM). it is an application programming interface, used to interact with web pages it can be used to add, delete andd change content on a HTML document.
+The document is just the webpage, the object includes every element in the docunent and the model describes how these object are layed in a tree fashion. Everything we can change in the document is a node: elements,text or HTML attributes.
+
+## 27. Transversing the DOM
+Traversing the DOM means navigating through elements and nodes in the HTML structure using JavaScript. This allows you to select, modify, or analyze relationships between elements.
+
+## 28. Changing content via the DOM
+ we can change the content by grabbing the element of the content to be changed. in a HTML we grab the element store it in a variable, to get the tag we have to use array notation targeting the particular element then use the property name called innerHTML if we want to change it we put an equal to sign and add the new HTML within a quotation mark.Another property is the text content .the difference between the innerHTML and the text content property is that the innerHTML can be used to changethe HTML(tags, elements etc) but the textcontent method can only be used to change the the text. when it is an id we dont have to use arrays because arrays appear once.
+
+ ## 29. Changing elements attribute
+  Attributes includes id,class,href etc. To change attributes we follow two steps frst of all we go in and grab what ever element we want and then we use some methods to read or change the attributes. we use the get attribute method to readthe attribute and set attribute to change the attribute.
+
+## 30.Changing CSS styles
+to change the CSS styles we use the set attribute method and add or change the style just as we do to add and change element attributes and all styles should be added at once seperated by commas .when updating style values we dont use hyphen instead we use camocase.
+
+## 31. Adding elements to the DOM
+to add an element to the DOM we have to follow two steps. First we have to create that element in javascript and secondly we have to take the created elements and push it to where we want in the HTML.To create a new element we are going to store them in a variable. Then we use the createElement method,then put the type of element we want to use in the bracket within the quotation marks.toput the element where we want we have to use the method called the appendchild then in a bracket we put the stored name of the element we've created.if we want to insert the element at the top we usea method called insert before, tergete wher in the html is should be added and then use an array to indicate the position where we want the element to be.
+
+## 32. Removing elements from the DOM
+To remove elements from the Dom we first of all grab the element we want to remove,then grab the parent element that the tag is within.then we use the removechild method to remove the element which is the child. we can store the removed element in a variable for eazy acces when needed.
+
+## 33. Javascript event
+event simply refers to the action of a js code on the browser performing an aspect of the code when some conditions are met.we can write an event directly to the HTML using attributes.but advisebly we can add it to our js file by storing the element in a var and then the variable will have access to all the event.there are so many event we can give to a variable. another way involve a method called addEventListener.
+
+## Window onload event
+this simply helps us to fire a certain portion of code when the window has been fully loaded

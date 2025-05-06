@@ -4,8 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #content{
+            width: 400px;
+            background-color: azure;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            max-height: 200px;
+            margin: 0 auto;
+            overflow: hidden;
+            transition: max-height 1s;
+        }
+        #button{
+            margin: 20px auto;
+            display: block;
+            text-align: center;
+            background-color: blue;
+            width: 120px;
+            cursor: pointer;
+            height: 30px;
+            padding-top: 12px;
+            font-size: large;
+            font-weight: bold;
+            color: white;
+        }
+        #content.open{
+            max-height: 1000px;
+            transition: max-height 1s;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <h1 class="intro" id="intro">I am Shemaiah Dennis</h1>
+        <nav id="first" class="section">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Message</li>
+            </ul>
+        </nav>
+
+        <div id="content">
+                <h2>SONG 1. Jehovah’s Attributes</h2>
+                <p>
+                    1. Jehovah our God, exalted in might,Creator of life and Provider of light. Creation speaks of your power so grand;The heavens and earth forever stand. <br><br>
+                    2. Your heavenly throne, on justice it stands.To us you make known all your righteous commands.And as we turn to your Word, we can seeYour wisdom revealed so brilliantly. <br><br>
+                    3. The greatest of all is your perfect love.Beyond all compare are your gifts from above.Your attributes and your glorious name,With joy and with zeal, we will proclaim.
+                </p></div>
+
+        <a id="button"> Show More</a>
+    </header>
     <script src="/script.js"></script>
 </body>
 </html>
